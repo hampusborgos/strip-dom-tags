@@ -1,0 +1,27 @@
+{
+  "name": "strip-dom-tags",
+  "version": "0.1.0",
+  "description": "Safely strip DOM tags from a HTML string to prevent XSS attacks.",
+  "main": "index.js",
+  "scripts": {
+    "prepush": "npm run format:check && npm run test",
+    "format": "prettier --write './**/*.js'",
+    "format:check": "prettier -l './**/*.js'",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjnilsson/strip-dom-tags.git"
+  },
+  "author": "Hampus Borgos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hjnilsson/strip-dom-tags.git"
+  },
+  "homepage": "https://github.com/hjnilsson/strip-dom-tags.git#readme",
+  "devDependencies": {
+    "@types/jest": "24.0.19",
+    "jest": "24.9.0"
+  }
+}
