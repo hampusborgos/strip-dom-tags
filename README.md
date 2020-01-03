@@ -5,6 +5,8 @@ This module exposes a single functions, that strips a HTML string from tags. It 
 
 You can whitelist different tags and attributes that are allowed, but `javascript:` attribute values will always be stripped.
 
+**This module only works in the browser**, it will always return the empty string if invoked server-side.
+
 # Usage
 
     stripTags(html : string, whitelistedTags = [] : string[], whitelistedAttributes = [] : string[], visitNode?: (node: Node) : Node) : string
